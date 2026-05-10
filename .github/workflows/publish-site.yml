@@ -35,7 +35,7 @@ jobs:
         working-directory: .
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile --ignore-scripts=false
+        run: pnpm install --frozen-lockfile --workspace-root
         working-directory: .
 
       - name: Build site
